@@ -1,4 +1,4 @@
-package hello.danadot.java8to11;
+package hello.danadot.java8to11.functional;
 
 @FunctionalInterface
 public interface RunSomething {

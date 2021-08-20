@@ -1,6 +1,8 @@
-package hello.danadot.java8to11;
+package hello.danadot.java8to11.functional;
 
-public class FunctionalProgramming {
+import hello.danadot.java8to11.functional.RunSomething;
+
+public class FunctionalInterface1 {
 
 
     public static void main(String[] args) {
