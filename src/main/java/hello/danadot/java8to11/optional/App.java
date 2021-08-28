@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class APP {
+public class App {
 
     public static void main(String[] args) {
 
@@ -30,7 +30,7 @@ public class APP {
         System.out.println("onlineClass = " + onlineClass.getTitle());
 
         // lazy
-        OnlineClass onlineClass1 = optional.orElseGet(APP::createNewJpaClasses);
+        OnlineClass onlineClass1 = optional.orElseGet(App::createNewJpaClasses);
         System.out.println("onlineClass1 = " + onlineClass1);
 
         // 대안이 없는 경우, exception 처리
@@ -54,7 +54,7 @@ public class APP {
 
         // 위의 경우 처럼 return타입이 Optional 인 경우 Optional FlatMap
         Optional<Progress> progress3 = optional.flatMap(OnlineClass::getProgress);
-        System.out.println("progress3 = " + progress3);
+    System.out.println("progress3 = " + progress3);
 
         // Stream에서 쓰는 FlatMap
         // input이 하나지만, output이 여러개인..?
