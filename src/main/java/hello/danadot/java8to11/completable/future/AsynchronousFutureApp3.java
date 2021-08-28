@@ -19,7 +19,6 @@ public class AsynchronousFutureApp3 {
             return "Helloworld!!";
         });
 
-
         CompletableFuture<Integer> hello = CompletableFuture.supplyAsync(() -> {
             System.out.println("Hello ! " + Thread.currentThread().getName());
             return 1;
